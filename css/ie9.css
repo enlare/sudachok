@@ -1,0 +1,11 @@
+/* 
+    Document   : ie9
+    Created on : 06.03.2013, 23:35:15
+    Author     : linn
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.alertRow, .bannerMenu, *{
+    filter: none;
+}

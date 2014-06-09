@@ -1,0 +1,424 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width"/>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>Судачок</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/jquery-1.9.js"></script>
+        <script  type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+        <script type="text/javascript" src="js/jquery.carouFredSel-6.2.0-packed.js"></script>
+
+        <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js"></script>
+        <link rel="stylesheet" type="text/css" href="js/fancybox/source/jquery.fancybox.css" media="screen" />
+        <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+        <script defer src="js/jquery.flexslider.js"></script>
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+        <script src="js/slider/js/bjqs-1.3.js"></script>
+        <link rel="stylesheet" href="js/slider/bjqs.css">
+         <script src="js/jquery-placeholder.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!--[if IE 9]>
+        <link rel="stylesheet" href="css/style_ie9.css">
+      <![endif]-->
+    </head>
+    <body>
+
+        <div id="wrapper" class="thanksWrapper">
+            <!--ТУТ ХЕДЕР ВЫШЕ ИЗ ХЛЕБНЫХ КРОШЕК. КЛАСС categoriesHeader!!!!!!!!!-->
+            <header id="header" class="categoriesHeader">
+                <div class="topHeader-wrapper">
+                    <div class="top">
+                        <div class="logoBlock leftFloat">
+                            <div class="greyText underLogo">
+                                Интернет-магазин
+                                рыболовного снаряжения
+                            </div>
+                            <div>
+                                <a href="index.html" class="logo">судачок</a>
+                            </div>
+                            <div>
+                                <div class="icons locationIcon"></div>
+                                <div class="town_container">
+                                    <div class="current_town boldItalic">Ростов-на-Дону</div>
+                                    <div class="town_triangle"></div>
+                                    <ul class="choice_town hidden">
+                                        <li>Ростов-На-Дону</li>
+                                        <li>Новочеркасск</li>
+                                        <li>Таганрог</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div>
+                                <div class="icons phone">
+                                    +7 (863) 282-22-01
+                                </div>
+                                <a href="javascript:void(0)" class="onlineCall">
+                                    позвонить онлайн
+                                </a>
+                            </div>
+                        </div>
+                        <!--для пустой корзины--> 
+                        <!--                        <div class="basket leftFloat emptyBasket">
+                                                    <ul class="basketSteps">
+                                                        <li>
+                                                            Сделайте покупку:
+                                                        </li>
+                                                        <li>Выберите товар</li>
+                                                        <li>Положите в корзину</li>
+                                                        <li>Оформите заказ</li>
+                                                    </ul>
+                                                    <div class="inBasket">
+                                                        <span>В корзине:</span>
+                                                        <br/>
+                                                        <a href="basket.html" class="basketBtn intheBasket"></a>
+                                                    </div>
+                                                </div>-->
+                        <!--для полной корзины-->
+                        <div class="basket leftFloat fullBasket">
+                            <div class="basketBtn leftBasketBlock"></div>
+                            <ul class="inBasketList">
+                                <li>
+                                    В корзине
+                                    <a href="javascript:void(0)" id="openBasketPopup">
+                                        3 товара
+                                    </a>
+                                </li>
+                                <li>
+                                    На суммму: 345435
+                                </li>
+                                <li>Ваша скидка <span class="skidka">20%</span></li>
+                                <li>Вы экономите 56675 руб</li>
+                            </ul>
+
+                        </div>
+                        <div class="topLinks leftFloat">
+                            <div class="leftFloat">
+                                <ul>
+                                    <li><a href="#">Полезная инфа</a></li>
+                                    <li><a href="#">Штучка</a></li>
+                                    <li><a href="#">Как разбогатеть</a></li>
+                                    <li><a href="#">Оплата в рассрочку</a></li>
+                                    <li><a href="#">Доставка по городу</a></li>
+                                </ul>
+                            </div>
+                            <div class="leftFloat">
+                                <ul>
+                                    <li><a href="#">О магазине</a></li>
+                                    <li><a href="#">Блог</a></li>
+                                    <li><a href="#">Купить</a></li>
+                                    <li><a href="#">Оплата</a></li>
+                                    <li><a href="#">Доставка</a></li>
+                                </ul>
+                            </div>
+                            <div class="leftFloat">
+                                <ul>
+                                    <li><a href="#" class="sign signIn">Вход</a></li>
+                                    <li><a href="#" class="sign signUp">Регистрация</a></li>
+                                    <li><a href="#">Гарантии</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                    <li><a href="#">Помощь</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alertRow">
+                        Скидки 30% на спининги все лето! Спешите!
+                        <a href="javascript:void(0)" class="delBtn" id="hideAlert"></a>
+                    </div>
+                </div>
+
+                <div class="searchBlock">
+                    <span class="leftFloat catTitle">
+                        <a href="javascript:void(0)" id="topCatalog">
+                            <span class="leftFloat">Каталог товаров </span>
+                            <span class="triangle leftFloat"></span></a>
+                    </span>
+                    <div class="category-wrapper hidden">
+                        <ul class="categories">
+                            <li>
+                                <a href="#" class="leftList" id="catalogHref">
+                                    <span class="leftFloat">Каталог товаров </span>
+                                    <span class="top_triangle leftFloat"></span>
+                                </a>
+                            </li>
+                            <li><a href="#" class="leftList">
+                                    <span class="leftIcons accessorize"></span>Аксессуары
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons gruziki"></span>Грузики
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons diski"></span>Диски
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons gerlici"></span>Жерлицы
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons inventar"></span>Инвентарь
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons katushki"></span>Катушки
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons kormushki"></span>Кормушки
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons kruchki"></span>Крючки
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons ledoburi"></span>Ледобуры
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons obuv"></span>Обувь
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons odejda"></span>Одежда
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons ochki"></span>Очки
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons povodki"></span>Поводки
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons podsadki"></span>Подсадки, садки
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons poplavki"></span>Поплавки
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons prikormka"></span>Прикормка
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons spiningi"></span>Спининги и удилища
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons sumki"></span>Сумки, чехлы, ящики
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons udochki"></span>Удочки зимние
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons shnuri"></span>Шнуры, леска
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons primanki"></span>Искусственные приманки
+                                    <!--<span class="arrow">&rsaquo;</span>-->
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons nasadki"></span>Насадки и наживки
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons dgig"></span>Джиг-головки
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="hot ">Новые поступления
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="hot ">Скидки дня
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="hot ">Уникальные товары
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="inputSearchWrapper">
+                        <input type="text" class="leftFloat searchInput inputs" value="dsfsdf">
+                        <a href="#" class="leftFloat searchBtn">Найти</a>
+                    </div>
+                </div>
+                <ul class="basketPopup hidden">
+                    <li class="borderLi">
+                        <div class="basketPreview leftFloat">
+                            <img src="images/blesna.png">
+                        </div>
+                        <ul class="tovarDescription"  itemscope itemtype="http://schema.org/Product">
+                            <li class="name"  itemprop="name">sdfsdf sdf sdfsdf</li>
+                            <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span itemprop="price">34546 руб</span></li>
+                            <li>
+                                <input class="basketInputCount marginTop0" readonly="" type="text" value="1"/>
+                                <div class="trianglesContainer marginTop0">
+                                    <div class="triangleUp5px"></div>
+                                    <div class="empty5px"></div>
+                                    <div class="triangleDown5px"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="borderLi">
+                        <div class="basketPreview leftFloat">
+                            <img src="images/blesna.png">
+                        </div>
+                        <ul class="tovarDescription"  itemscope itemtype="http://schema.org/Product">
+                            <li class="name"  itemprop="name">sdfsdf sdf sdfsdf</li>
+                            <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span itemprop="price">34546 руб</span></li>
+                            <li>
+                                <input class="basketInputCount marginTop0" readonly="" type="text" value="1"/>
+                                <div class="trianglesContainer marginTop0">
+                                    <div class="triangleUp5px"></div>
+                                    <div class="empty5px"></div>
+                                    <div class="triangleDown5px"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" class="greenBtn btn-normal" id="goToOrder">Перейти к оформлению заказа</button>
+                    </li>
+                </ul>
+                 <div class="breadcrums categoriesBreadcrums">
+                    <a href="index.html">Рыболовный магазин</a>
+                    <span class="breadcrumsDivider"></span>
+                    <a href="#" class="current">Помощь</a>
+                </div>
+            </header><!-- #header-->
+            <div class="wrapperForTextPage">
+                <h2>Помощь</h2>
+                <p>Согласно предыдущему, рекламное сообщество редко
+                    соответствует рыночным ожиданиям. Целевой трафик, в 
+                    рамках сегодняшних воззрений, индуцирует медийный 
+                    канал, повышая конкуренцию. Тактика выстраивания 
+                    отношений с коммерсчекими агентами последовательно
+                    упорядочивает типичный BTL, учитывая результат 
+                    предыдущих медиа-кампаний. Анализ рыночных 
+                    цен поддержив
+                </p>
+                 <p>Согласно предыдущему, рекламное сообщество редко
+                    соответствует рыночным ожиданиям. Целевой трафик, в 
+                    рамках сегодняшних воззрений, индуцирует медийный 
+                    канал, повышая конкуренцию. Тактика выстраивания 
+                    отношений с коммерсчекими агентами последовательно
+                    упорядочивает типичный BTL, учитывая результат 
+                    предыдущих медиа-кампаний. Анализ рыночных 
+                    цен поддержив
+                </p>
+                 <p>Согласно предыдущему, рекламное сообщество редко
+                    соответствует рыночным ожиданиям. Целевой трафик, в 
+                    рамках сегодняшних воззрений, индуцирует медийный 
+                    канал, повышая конкуренцию. Тактика выстраивания 
+                    отношений с коммерсчекими агентами последовательно
+                    упорядочивает типичный BTL, учитывая результат 
+                    предыдущих медиа-кампаний. Анализ рыночных 
+                    цен поддержив
+                </p>
+                <ul>
+                    <li>sdfdsfsdf ss dfsвап</li>
+                    <li>вап впвп впрвпва ы</li>
+                </ul>
+            </div>
+        </div><!-- #wrapper -->
+
+        <footer id="footer">
+            <div class="greyFooter">
+                <div class="paymentIcons leftFloat">
+                    <ul>
+                        <li>
+                            <a href="#" class="paymentIconHref paymentIcon-1"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-2"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-3"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-4"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="paymentIconHref paymentIcon-5"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-6"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-7"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-8"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="paymentIconHref paymentIcon-9"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-10"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-11"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-12"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottomLinks leftFloat">
+                    <div class="leftFloat">
+                        <ul>
+                            <li><a href="#">Полезная инфа</a></li>
+                            <li><a href="#">Штучка</a></li>
+                            <li><a href="#">Как разбогатеть</a></li>
+                            <li><a href="#">Оплата в рассрочку</a></li>
+                            <li><a href="#">Доставка по городу</a></li>
+                        </ul>
+                    </div>
+                    <div class="leftFloat">
+                        <ul>
+                            <li><a href="#">Полезная инфа</a></li>
+                            <li><a href="#">Штучка</a></li>
+                            <li><a href="#">Как разбогатеть</a></li>
+                            <li><a href="#">Оплата в рассрочку</a></li>
+                            <li><a href="#">Доставка по городу</a></li>
+                        </ul>
+                    </div>
+                    <div class="leftFloat">
+                        <ul>
+                            <li><a href="#">О магазине</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Купить</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Доставка</a></li>
+                        </ul>
+                    </div>
+                    <div class="leftFloat">
+                        <ul>
+                            <li><a href="#" class="sign signIn">Вход</a></li>
+                            <li><a href="#" class="sign signUp">Регистрация</a></li>
+                            <li><a href="#">Гарантии</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Помощь</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomFooter">
+                <div class="leftFloat">© OOO «Рыболовный магазин»
+                    <br/>
+                    Ростов-на-Дону, 2012
+                </div>
+                <div class="leftFloat">Вся информация на сайте носит справочный характер<br />
+                    и не является публичной офертой, определяемой статьей 437 ГК РФ.</div>
+                <div class="leftFloat">
+                    Пример продающего магазина<br/> от
+                    <a href="#">Владимира Бодрого</a>
+                </div>
+            </div>
+        </footer><!-- #footer -->
+    </body>
+</html>

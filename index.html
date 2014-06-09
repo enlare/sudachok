@@ -1,0 +1,1152 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width"/>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>Судачок</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/jquery-1.9.js"></script>
+        <script  type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+
+        <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js"></script>
+        <link rel="stylesheet" type="text/css" href="js/fancybox/source/jquery.fancybox.css" media="screen" />
+        <script src="js/slider/js/bjqs-1.3.js"></script>
+         <script src="js/jquery-placeholder.js"></script>
+        <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+        <link rel="stylesheet" href="js/slider/bjqs.css">
+
+        <script type="text/javascript" src="js/script.js"></script>
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!--[if IE 9]>
+        <link rel="stylesheet" href="css/style_ie9.css">
+      <![endif]-->
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+            <header id="header">
+                <div class="topHeader-wrapper">
+                    <div class="top">
+                        <div class="logoBlock leftFloat">
+                            <div class="greyText underLogo">
+                                Интернет-магазин
+                                рыболовного снаряжения
+                            </div>
+                            <div>
+                                <a href="index.html" class="logo">судачок</a>
+                            </div>
+                            <div>
+                                <div class="icons locationIcon"></div>
+                                <div class="town_container">
+                                    <div class="current_town boldItalic">Ростов-на-Дону</div>
+                                    <div class="town_triangle"></div>
+                                    <ul class="choice_town hidden">
+                                        <li>Ростов-На-Дону</li>
+                                        <li>Новочеркасск</li>
+                                        <li>Таганрог</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div>
+                                <div class="icons phone">
+                                    +7 (863) 282-22-01
+                                </div>
+                                <a href="javascript:void(0)" class="onlineCall">
+                                    позвонить онлайн
+                                </a>
+                            </div>
+                        </div>
+                        <!--для пустой корзины--> 
+                        <!--                        <div class="basket leftFloat emptyBasket">
+                                                    <ul class="basketSteps">
+                                                        <li>
+                                                            Сделайте покупку:
+                                                        </li>
+                                                        <li>Выберите товар</li>
+                                                        <li>Положите в корзину</li>
+                                                        <li>Оформите заказ</li>
+                                                    </ul>
+                                                    <div class="inBasket">
+                                                        <span>В корзине:</span>
+                                                        <br/>
+                                                        <a href="basket.html" class="basketBtn intheBasket"></a>
+                                                    </div>
+                                                </div>-->
+                        <!--для полной корзины-->
+                        <div class="basket leftFloat fullBasket">
+                            <div class="basketBtn leftBasketBlock"></div>
+                            <ul class="inBasketList">
+                                <li>
+                                    В корзине
+                                    <a href="javascript:void(0)" id="openBasketPopup">
+                                        3 товара
+                                    </a>
+                                </li>
+                                <li>
+                                    На суммму: 345435
+                                </li>
+                                <li>Ваша скидка <span class="skidka">20%</span></li>
+                                <li>Вы экономите 56675 руб</li>
+                            </ul>
+
+                        </div>
+                        <div class="topLinks leftFloat">
+                            <div class="leftFloat">
+                                <ul>
+                                    <li><a href="#">Полезная инфа</a></li>
+                                    <li><a href="#">Штучка</a></li>
+                                    <li><a href="#">Как разбогатеть</a></li>
+                                    <li><a href="#">Оплата в рассрочку</a></li>
+                                    <li><a href="#">Доставка по городу</a></li>
+                                </ul>
+                            </div>
+                            <div class="leftFloat">
+                                <ul>
+                                    <li><a href="#">О магазине</a></li>
+                                    <li><a href="#">Блог</a></li>
+                                    <li><a href="#">Купить</a></li>
+                                    <li><a href="#">Оплата</a></li>
+                                    <li><a href="#">Доставка</a></li>
+                                </ul>
+                            </div>
+                            <div class="leftFloat">
+                                <ul>
+                                    <li><a href="#" class="sign signIn">Вход</a></li>
+                                    <li><a href="#" class="sign signUp">Регистрация</a></li>
+                                    <li><a href="#">Гарантии</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                    <li><a href="#">Помощь</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alertRow">
+                        Скидки 30% на спининги все лето! Спешите!
+                        <a href="javascript:void(0)" class="delBtn" id="hideAlert"></a>
+                    </div>
+                </div>
+
+                <div class="searchBlock">
+                    <span class="leftFloat catTitle">
+                        <a href="javascript:void(0)" id="topCatalog">
+                            <span class="leftFloat">Каталог товаров </span>
+                            <span class="triangle leftFloat"></span></a>
+                    </span>
+                    <div class="category-wrapper hidden">
+                        <ul class="categories">
+                            <li>
+                                <a href="#" class="leftList" id="catalogHref">
+                                    <span class="leftFloat">Каталог товаров </span>
+                                    <span class="top_triangle leftFloat"></span>
+                                </a>
+                            </li>
+                            <li><a href="#" class="leftList">
+                                    <span class="leftIcons accessorize"></span>Аксессуары
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons gruziki"></span>Грузики
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons diski"></span>Диски
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons gerlici"></span>Жерлицы
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons inventar"></span>Инвентарь
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons katushki"></span>Катушки
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons kormushki"></span>Кормушки
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons kruchki"></span>Крючки
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons ledoburi"></span>Ледобуры
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons obuv"></span>Обувь
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons odejda"></span>Одежда
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons ochki"></span>Очки
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons povodki"></span>Поводки
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons podsadki"></span>Подсадки, садки
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons poplavki"></span>Поплавки
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons prikormka"></span>Прикормка
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons spiningi"></span>Спининги и удилища
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons sumki"></span>Сумки, чехлы, ящики
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons udochki"></span>Удочки зимние
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons shnuri"></span>Шнуры, леска
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons primanki"></span>Искусственные приманки
+                                    <!--<span class="arrow">&rsaquo;</span>-->
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons nasadki"></span>Насадки и наживки
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="leftList ">
+                                    <span class="leftIcons dgig"></span>Джиг-головки
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="hot ">Новые поступления
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="hot ">Скидки дня
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                            <li><a href="#" class="hot ">Уникальные товары
+                                    <span class="arrow">&rsaquo;</span>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="inputSearchWrapper">
+                        <input type="text" class="leftFloat searchInput inputs" placeholder="например язь">
+                        <a href="#" class="leftFloat searchBtn">Найти</a>
+                    </div>
+                </div>
+                <ul class="basketPopup hidden">
+                    <li class="borderLi">
+                        <div class="basketPreview leftFloat">
+                            <img src="images/blesna.png">
+                        </div>
+                         <ul class="tovarDescription"  itemscope itemtype="http://schema.org/Product">
+                            <li class="name"  itemprop="name">sdfsdf sdf sdfsdf</li>
+                            <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span itemprop="price">34546 руб</span></li>
+                            <li>
+                                <input class="basketInputCount marginTop0" readonly="" type="text" value="1"/>
+                                <div class="trianglesContainer marginTop0">
+                                    <div class="triangleUp5px"></div>
+                                    <div class="empty5px"></div>
+                                    <div class="triangleDown5px"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="borderLi">
+                        <div class="basketPreview leftFloat">
+                            <img src="images/blesna.png">
+                        </div>
+                         <ul class="tovarDescription"  itemscope itemtype="http://schema.org/Product">
+                            <li class="name"  itemprop="name">sdfsdf sdf sdfsdf</li>
+                            <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span itemprop="price">34546 руб</span></li>
+                            <li>
+                                <input class="basketInputCount marginTop0" readonly="" type="text" value="1"/>
+                                <div class="trianglesContainer marginTop0">
+                                    <div class="triangleUp5px"></div>
+                                    <div class="empty5px"></div>
+                                    <div class="triangleDown5px"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" class="greenBtn btn-normal" id="goToOrder">Перейти к оформлению заказа</button>
+                    </li>
+                </ul>
+            </header><!-- #header-->
+            <section id="middle">
+
+                <div id="container">
+                    <div id="content">
+                        <div class="carouselWrapper">
+                            <div id="banner-fade">
+                                <ul class="bjqs">
+                                    <li><img src="images/slider/slider.png" title="Automatically generated caption"></li>
+                                    <li><img src="images/slider/slider1.png" title="Automatically generated caption"></li>
+                                    <li><img src="images/slider/slider2.png" title="Automatically generated caption"></li>
+                                    <li><img src="images/slider/slider3.png" title="Automatically generated caption"></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="cellHeader header-new">
+                            <div class="blog_container_header">
+                                <a href="#">Новые поступления</a>
+                            </div>
+                            <div class="blog_container_header_border"></div>
+                        </div>
+
+                        <div class="itemWrapper-new">
+                            <div class="itemCell newItem leftFloat">
+                                <div class="itemCell_inner_div" itemscope itemtype="http://schema.org/Product">
+                                    <img class="itemCell_image_preview" src="images/blesna.png"/>
+                                    <div class="itemCell_stars">
+
+                                        <ul class="star-rating" >
+                                            <li class="current-rating is-current__rate-5" data-rate="5"  itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">5/5</li>
+                                            <li><a href="javascript:void(0);" title="1 из 5" class="one-star js-rate" >1</a></li>
+                                            <li><a href="javascript:void(0);" title="2 из 5" class="two-stars js-rate" >2</a></li>
+                                            <li><a href="javascript:void(0);" title="3 из 5" class="three-stars js-rate" >3</a></li>
+                                            <li><a href="javascript:void(0);" title="4 из 5" class="four-stars js-rate" >4</a></li>
+                                            <li><a href="javascript:void(0);" title="5 из 5" class="five-stars js-rate" >5</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a class="itemCell_link" itemprop="url" href="http//sudachok.com/">Kastmaster</a>
+                                    </div>
+                                    <div class="itemCell_description"   >
+                                        Блестна
+                                    </div>
+                                    <div class="itemCell_bottom"  itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <span class="red_strike">230</span>
+                                        <span class="itemCell_bottom_cost"  itemprop="price">80 рублей</span>
+                                        <button type="button" class="btnBuy"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemCell newItem leftFloat">
+                                <div class="itemCell_inner_div" itemscope itemtype="http://schema.org/Product">
+                                    <img class="itemCell_image_preview" src="images/blesna.png"/>
+                                    <div class="itemCell_stars">
+
+                                        <ul class="star-rating" >
+                                            <li class="current-rating is-current__rate-5" data-rate="5"  itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">5/5</li>
+                                            <li><a href="javascript:void(0);" title="1 из 5" class="one-star js-rate" >1</a></li>
+                                            <li><a href="javascript:void(0);" title="2 из 5" class="two-stars js-rate" >2</a></li>
+                                            <li><a href="javascript:void(0);" title="3 из 5" class="three-stars js-rate" >3</a></li>
+                                            <li><a href="javascript:void(0);" title="4 из 5" class="four-stars js-rate" >4</a></li>
+                                            <li><a href="javascript:void(0);" title="5 из 5" class="five-stars js-rate" >5</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a class="itemCell_link" itemprop="url" href="http//sudachok.com/">Kastmaster</a>
+                                    </div>
+                                    <div class="itemCell_description"   >
+                                        Блестна
+                                    </div>
+                                    <div class="itemCell_bottom"  itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <span class="red_strike">230</span>
+                                        <span class="itemCell_bottom_cost"  itemprop="price">80 рублей</span>
+                                        <button type="button" class="btnBuy"></button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="itemCell newItem leftFloat">
+                                <div class="itemCell_inner_div" itemscope itemtype="http://schema.org/Product">
+                                    <img class="itemCell_image_preview" src="images/blesna.png"/>
+                                    <div class="itemCell_stars">
+
+                                        <ul class="star-rating" >
+                                            <li class="current-rating is-current__rate-5" data-rate="5"  itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">5/5</li>
+                                            <li><a href="javascript:void(0);" title="1 из 5" class="one-star js-rate" >1</a></li>
+                                            <li><a href="javascript:void(0);" title="2 из 5" class="two-stars js-rate" >2</a></li>
+                                            <li><a href="javascript:void(0);" title="3 из 5" class="three-stars js-rate" >3</a></li>
+                                            <li><a href="javascript:void(0);" title="4 из 5" class="four-stars js-rate" >4</a></li>
+                                            <li><a href="javascript:void(0);" title="5 из 5" class="five-stars js-rate" >5</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a class="itemCell_link" itemprop="url" href="http//sudachok.com/">Kastmaster</a>
+                                    </div>
+                                    <div class="itemCell_description"   >
+                                        Блестна
+                                    </div>
+                                    <div class="itemCell_bottom"  itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <span class="red_strike">230</span>
+                                        <span class="itemCell_bottom_cost"  itemprop="price">80 рублей</span>
+                                        <button type="button" class="btnBuy"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemCell newItem leftFloat">
+                                <div class="itemCell_inner_div" itemscope itemtype="http://schema.org/Product">
+                                    <img class="itemCell_image_preview" src="images/blesna.png"/>
+                                    <div class="itemCell_stars">
+
+                                        <ul class="star-rating" >
+                                            <li class="current-rating is-current__rate-5" data-rate="5"  itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">5/5</li>
+                                            <li><a href="javascript:void(0);" title="1 из 5" class="one-star js-rate" >1</a></li>
+                                            <li><a href="javascript:void(0);" title="2 из 5" class="two-stars js-rate" >2</a></li>
+                                            <li><a href="javascript:void(0);" title="3 из 5" class="three-stars js-rate" >3</a></li>
+                                            <li><a href="javascript:void(0);" title="4 из 5" class="four-stars js-rate" >4</a></li>
+                                            <li><a href="javascript:void(0);" title="5 из 5" class="five-stars js-rate" >5</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a class="itemCell_link" itemprop="url" href="http//sudachok.com/">Kastmaster</a>
+                                    </div>
+                                    <div class="itemCell_description"   >
+                                        Блестна
+                                    </div>
+                                    <div class="itemCell_bottom"  itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <span class="red_strike">230</span>
+                                        <span class="itemCell_bottom_cost"  itemprop="price">80 рублей</span>
+                                        <button type="button" class="btnBuy"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cellHeader header-lider">
+                            <div class="blog_container_header">
+                                <a href="#">Новые поступления</a>
+                            </div>
+                            <div class="blog_container_header_border"></div>
+                        </div>
+                        <div class="itemWrapper-liders">
+
+
+                            <div class="itemCell lider leftFloat">
+                                <div class="itemCell_inner_div" itemscope itemtype="http://schema.org/Product">
+                                    <img class="itemCell_image_preview" src="images/blesna.png"/>
+                                    <div class="itemCell_stars">
+
+                                        <ul class="star-rating" >
+                                            <li class="current-rating is-current__rate-5" data-rate="5"  itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">5/5</li>
+                                            <li><a href="javascript:void(0);" title="1 из 5" class="one-star js-rate" >1</a></li>
+                                            <li><a href="javascript:void(0);" title="2 из 5" class="two-stars js-rate" >2</a></li>
+                                            <li><a href="javascript:void(0);" title="3 из 5" class="three-stars js-rate" >3</a></li>
+                                            <li><a href="javascript:void(0);" title="4 из 5" class="four-stars js-rate" >4</a></li>
+                                            <li><a href="javascript:void(0);" title="5 из 5" class="five-stars js-rate" >5</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a class="itemCell_link" itemprop="url" href="http//sudachok.com/">Kastmaster</a>
+                                    </div>
+                                    <div class="itemCell_description"   >
+                                        Блестна
+                                    </div>
+                                    <div class="itemCell_bottom"  itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <span class="red_strike">230</span>
+                                        <span class="itemCell_bottom_cost"  itemprop="price">80 рублей</span>
+                                        <button type="button" class="btnBuy"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemCell lider leftFloat">
+                                <div class="itemCell_inner_div" itemscope itemtype="http://schema.org/Product">
+                                    <img class="itemCell_image_preview" src="images/blesna.png"/>
+                                    <div class="itemCell_stars">
+
+                                        <ul class="star-rating" >
+                                            <li class="current-rating is-current__rate-5" data-rate="5"  itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">5/5</li>
+                                            <li><a href="javascript:void(0);" title="1 из 5" class="one-star js-rate" >1</a></li>
+                                            <li><a href="javascript:void(0);" title="2 из 5" class="two-stars js-rate" >2</a></li>
+                                            <li><a href="javascript:void(0);" title="3 из 5" class="three-stars js-rate" >3</a></li>
+                                            <li><a href="javascript:void(0);" title="4 из 5" class="four-stars js-rate" >4</a></li>
+                                            <li><a href="javascript:void(0);" title="5 из 5" class="five-stars js-rate" >5</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a class="itemCell_link" itemprop="url" href="http//sudachok.com/">Kastmaster</a>
+                                    </div>
+                                    <div class="itemCell_description"   >
+                                        Блестна
+                                    </div>
+                                    <div class="itemCell_bottom"  itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <span class="red_strike">230</span>
+                                        <span class="itemCell_bottom_cost"  itemprop="price">80 рублей</span>
+                                        <button type="button" class="btnBuy"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemCell lider leftFloat">
+                                <div class="itemCell_inner_div" itemscope itemtype="http://schema.org/Product">
+                                    <img class="itemCell_image_preview" src="images/blesna.png"/>
+                                    <div class="itemCell_stars">
+
+                                        <ul class="star-rating" >
+                                            <li class="current-rating is-current__rate-5" data-rate="5"  itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">5/5</li>
+                                            <li><a href="javascript:void(0);" title="1 из 5" class="one-star js-rate" >1</a></li>
+                                            <li><a href="javascript:void(0);" title="2 из 5" class="two-stars js-rate" >2</a></li>
+                                            <li><a href="javascript:void(0);" title="3 из 5" class="three-stars js-rate" >3</a></li>
+                                            <li><a href="javascript:void(0);" title="4 из 5" class="four-stars js-rate" >4</a></li>
+                                            <li><a href="javascript:void(0);" title="5 из 5" class="five-stars js-rate" >5</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a class="itemCell_link" itemprop="url" href="http//sudachok.com/">Kastmaster</a>
+                                    </div>
+                                    <div class="itemCell_description"   >
+                                        Блестна
+                                    </div>
+                                    <div class="itemCell_bottom"  itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <span class="red_strike">230</span>
+                                        <span class="itemCell_bottom_cost"  itemprop="price">80 рублей</span>
+                                        <button type="button" class="btnBuy"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemCell lider leftFloat">
+                                <div class="itemCell_inner_div" itemscope itemtype="http://schema.org/Product">
+                                    <img class="itemCell_image_preview" src="images/blesna.png"/>
+                                    <div class="itemCell_stars">
+
+                                        <ul class="star-rating" >
+                                            <li class="current-rating is-current__rate-5" data-rate="5"  itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">5/5</li>
+                                            <li><a href="javascript:void(0);" title="1 из 5" class="one-star js-rate" >1</a></li>
+                                            <li><a href="javascript:void(0);" title="2 из 5" class="two-stars js-rate" >2</a></li>
+                                            <li><a href="javascript:void(0);" title="3 из 5" class="three-stars js-rate" >3</a></li>
+                                            <li><a href="javascript:void(0);" title="4 из 5" class="four-stars js-rate" >4</a></li>
+                                            <li><a href="javascript:void(0);" title="5 из 5" class="five-stars js-rate" >5</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a class="itemCell_link" itemprop="url" href="http//sudachok.com/">Kastmaster</a>
+                                    </div>
+                                    <div class="itemCell_description"   >
+                                        Блестна
+                                    </div>
+                                    <div class="itemCell_bottom"  itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <span class="red_strike">230</span>
+                                        <span class="itemCell_bottom_cost"  itemprop="price">80 рублей</span>
+                                        <button type="button" class="btnBuy"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cellHeader header-custom">
+                            <div class="blog_container_header">
+                                <a href="#">Блестна</a>
+                            </div>
+                            <div class="blog_container_header_border"></div>
+
+                        </div>
+                        <div class="itemWrapper-custom">
+                            <div class="itemCell custom leftFloat">
+                                <div class="itemCell_inner_div" itemscope itemtype="http://schema.org/Product">
+                                    <img class="itemCell_image_preview" src="images/blesna.png"/>
+                                    <div class="itemCell_stars">
+
+                                        <ul class="star-rating" >
+                                            <li class="current-rating is-current__rate-5" data-rate="5"  itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">5/5</li>
+                                            <li><a href="javascript:void(0);" title="1 из 5" class="one-star js-rate" >1</a></li>
+                                            <li><a href="javascript:void(0);" title="2 из 5" class="two-stars js-rate" >2</a></li>
+                                            <li><a href="javascript:void(0);" title="3 из 5" class="three-stars js-rate" >3</a></li>
+                                            <li><a href="javascript:void(0);" title="4 из 5" class="four-stars js-rate" >4</a></li>
+                                            <li><a href="javascript:void(0);" title="5 из 5" class="five-stars js-rate" >5</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a class="itemCell_link" itemprop="url" href="http//sudachok.com/">Kastmaster</a>
+                                    </div>
+                                    <div class="itemCell_description"   >
+                                        Блестна
+                                    </div>
+                                    <div class="itemCell_bottom"  itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <span class="red_strike">230</span>
+                                        <span class="itemCell_bottom_cost"  itemprop="price">80 рублей</span>
+                                        <button type="button" class="btnBuy"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemCell custom leftFloat">
+                                <div class="itemCell_inner_div" itemscope itemtype="http://schema.org/Product">
+                                    <img class="itemCell_image_preview" src="images/blesna.png"/>
+                                    <div class="itemCell_stars">
+
+                                        <ul class="star-rating" >
+                                            <li class="current-rating is-current__rate-5" data-rate="5"  itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">5/5</li>
+                                            <li><a href="javascript:void(0);" title="1 из 5" class="one-star js-rate" >1</a></li>
+                                            <li><a href="javascript:void(0);" title="2 из 5" class="two-stars js-rate" >2</a></li>
+                                            <li><a href="javascript:void(0);" title="3 из 5" class="three-stars js-rate" >3</a></li>
+                                            <li><a href="javascript:void(0);" title="4 из 5" class="four-stars js-rate" >4</a></li>
+                                            <li><a href="javascript:void(0);" title="5 из 5" class="five-stars js-rate" >5</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a class="itemCell_link" itemprop="url" href="http//sudachok.com/">Kastmaster</a>
+                                    </div>
+                                    <div class="itemCell_description"   >
+                                        Блестна
+                                    </div>
+                                    <div class="itemCell_bottom"  itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <span class="red_strike">230</span>
+                                        <span class="itemCell_bottom_cost"  itemprop="price">80 рублей</span>
+                                        <button type="button" class="btnBuy"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemCell custom leftFloat">
+                                <div class="itemCell_inner_div" itemscope itemtype="http://schema.org/Product">
+                                    <img class="itemCell_image_preview" src="images/blesna.png"/>
+                                    <div class="itemCell_stars">
+
+                                        <ul class="star-rating" >
+                                            <li class="current-rating is-current__rate-5" data-rate="5"  itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">5/5</li>
+                                            <li><a href="javascript:void(0);" title="1 из 5" class="one-star js-rate" >1</a></li>
+                                            <li><a href="javascript:void(0);" title="2 из 5" class="two-stars js-rate" >2</a></li>
+                                            <li><a href="javascript:void(0);" title="3 из 5" class="three-stars js-rate" >3</a></li>
+                                            <li><a href="javascript:void(0);" title="4 из 5" class="four-stars js-rate" >4</a></li>
+                                            <li><a href="javascript:void(0);" title="5 из 5" class="five-stars js-rate" >5</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a class="itemCell_link" itemprop="url" href="http//sudachok.com/">Kastmaster</a>
+                                    </div>
+                                    <div class="itemCell_description"   >
+                                        Блестна
+                                    </div>
+                                    <div class="itemCell_bottom"  itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <span class="red_strike">230</span>
+                                        <span class="itemCell_bottom_cost"  itemprop="price">80 рублей</span>
+                                        <button type="button" class="btnBuy"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cellHeader header-custom">
+                            <div class="blog_container_header">
+                                <a href="#">Лодки</a>
+                            </div>
+                            <div class="blog_container_header_border"></div>
+                        </div>
+
+
+
+
+                        <div class="itemWrapper-custom">
+                            <div class="itemCell custom leftFloat">
+                                <div class="itemCell_inner_div" itemscope itemtype="http://schema.org/Product">
+                                    <img class="itemCell_image_preview" src="images/blesna.png"/>
+                                    <div class="itemCell_stars">
+
+                                        <ul class="star-rating" >
+                                            <li class="current-rating is-current__rate-5" data-rate="5"  itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">5/5</li>
+                                            <li><a href="javascript:void(0);" title="1 из 5" class="one-star js-rate" >1</a></li>
+                                            <li><a href="javascript:void(0);" title="2 из 5" class="two-stars js-rate" >2</a></li>
+                                            <li><a href="javascript:void(0);" title="3 из 5" class="three-stars js-rate" >3</a></li>
+                                            <li><a href="javascript:void(0);" title="4 из 5" class="four-stars js-rate" >4</a></li>
+                                            <li><a href="javascript:void(0);" title="5 из 5" class="five-stars js-rate" >5</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a class="itemCell_link" itemprop="url" href="http//sudachok.com/">Kastmaster</a>
+                                    </div>
+                                    <div class="itemCell_description"   >
+                                        Блестна
+                                    </div>
+                                    <div class="itemCell_bottom"  itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <span class="red_strike">230</span>
+                                        <span class="itemCell_bottom_cost"  itemprop="price">80 рублей</span>
+                                        <button type="button" class="btnBuy"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemCell custom leftFloat">
+                                <div class="itemCell_inner_div" itemscope itemtype="http://schema.org/Product">
+                                    <img class="itemCell_image_preview" src="images/blesna.png"/>
+                                    <div class="itemCell_stars">
+
+                                        <ul class="star-rating" >
+                                            <li class="current-rating is-current__rate-5" data-rate="5"  itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">5/5</li>
+                                            <li><a href="javascript:void(0);" title="1 из 5" class="one-star js-rate" >1</a></li>
+                                            <li><a href="javascript:void(0);" title="2 из 5" class="two-stars js-rate" >2</a></li>
+                                            <li><a href="javascript:void(0);" title="3 из 5" class="three-stars js-rate" >3</a></li>
+                                            <li><a href="javascript:void(0);" title="4 из 5" class="four-stars js-rate" >4</a></li>
+                                            <li><a href="javascript:void(0);" title="5 из 5" class="five-stars js-rate" >5</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a class="itemCell_link" itemprop="url" href="http//sudachok.com/">Kastmaster</a>
+                                    </div>
+                                    <div class="itemCell_description"   >
+                                        Блестна
+                                    </div>
+                                    <div class="itemCell_bottom"  itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <span class="red_strike">230</span>
+                                        <span class="itemCell_bottom_cost"  itemprop="price">80 рублей</span>
+                                        <button type="button" class="btnBuy"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemCell custom leftFloat">
+                                <div class="itemCell_inner_div" itemscope itemtype="http://schema.org/Product">
+                                    <img class="itemCell_image_preview" src="images/blesna.png"/>
+                                    <div class="itemCell_stars">
+
+                                        <ul class="star-rating" >
+                                            <li class="current-rating is-current__rate-5" data-rate="5"  itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">5/5</li>
+                                            <li><a href="javascript:void(0);" title="1 из 5" class="one-star js-rate" >1</a></li>
+                                            <li><a href="javascript:void(0);" title="2 из 5" class="two-stars js-rate" >2</a></li>
+                                            <li><a href="javascript:void(0);" title="3 из 5" class="three-stars js-rate" >3</a></li>
+                                            <li><a href="javascript:void(0);" title="4 из 5" class="four-stars js-rate" >4</a></li>
+                                            <li><a href="javascript:void(0);" title="5 из 5" class="five-stars js-rate" >5</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a class="itemCell_link" itemprop="url" href="http//sudachok.com/">Kastmaster</a>
+                                    </div>
+                                    <div class="itemCell_description"   >
+                                        Блестна
+                                    </div>
+                                    <div class="itemCell_bottom"  itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <span class="red_strike">230</span>
+                                        <span class="itemCell_bottom_cost"  itemprop="price">80 рублей</span>
+                                        <button type="button" class="btnBuy"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemCell custom leftFloat">
+                                <div class="itemCell_inner_div" itemscope itemtype="http://schema.org/Product">
+                                    <img class="itemCell_image_preview" src="images/blesna.png"/>
+                                    <div class="itemCell_stars">
+
+                                        <ul class="star-rating" >
+                                            <li class="current-rating is-current__rate-5" data-rate="5"  itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">5/5</li>
+                                            <li><a href="javascript:void(0);" title="1 из 5" class="one-star js-rate" >1</a></li>
+                                            <li><a href="javascript:void(0);" title="2 из 5" class="two-stars js-rate" >2</a></li>
+                                            <li><a href="javascript:void(0);" title="3 из 5" class="three-stars js-rate" >3</a></li>
+                                            <li><a href="javascript:void(0);" title="4 из 5" class="four-stars js-rate" >4</a></li>
+                                            <li><a href="javascript:void(0);" title="5 из 5" class="five-stars js-rate" >5</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a class="itemCell_link" itemprop="url" href="http//sudachok.com/">Kastmaster</a>
+                                    </div>
+                                    <div class="itemCell_description"   >
+                                        Блестна
+                                    </div>
+                                    <div class="itemCell_bottom"  itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <span class="red_strike">230</span>
+                                        <span class="itemCell_bottom_cost"  itemprop="price">80 рублей</span>
+                                        <button type="button" class="btnBuy"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div><!-- #content-->
+                </div><!-- #container-->
+
+                <aside id="sideLeft">
+                    <ul class="categories">
+                        <li><a href="#" class="leftList">
+                                <span class="leftIcons accessorize"></span>Аксессуары
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons gruziki"></span>Грузики
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons diski"></span>Диски
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons gerlici"></span>Жерлицы
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons inventar"></span>Инвентарь
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons katushki"></span>Катушки
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons kormushki"></span>Кормушки
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons kruchki"></span>Крючки
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons ledoburi"></span>Ледобуры
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons obuv"></span>Обувь
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons odejda"></span>Одежда
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons ochki"></span>Очки
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons povodki"></span>Поводки
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons podsadki"></span>Подсадки, садки
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons poplavki"></span>Поплавки
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons prikormka"></span>Прикормка
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons spiningi"></span>Спининги и удилища
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons sumki"></span>Сумки, чехлы, ящики
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons udochki"></span>Удочки зимние
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons shnuri"></span>Шнуры, леска
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons primanki"></span>Искусственные приманки
+                                <!--<span class="arrow">&rsaquo;</span>-->
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons nasadki"></span>Насадки и наживки
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="leftList ">
+                                <span class="leftIcons dgig"></span>Джиг-головки
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="hot ">Новые поступления
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="hot ">Скидки дня
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                        <li><a href="#" class="hot ">Уникальные товары
+                                <span class="arrow">&rsaquo;</span>
+                            </a></li>
+                    </ul>
+
+                    <ul class="forumLinks">
+                        <li><a href="#" target="_blank">Форум</a></li>
+                        <li><a href="#" target="_blank">Новости с водоемов</a></li>
+                        <li><a href="#" target="_blank" >Корюшка</a></li>
+                        <li><a href="#" target="_blank">Едем на рыбалку. Кого забрать, кто подвезет?!</a></li>
+                        <li><a href="#" target="_blank">Нужен карась живец?</a></li>
+                        <li><a href="#" target="_blank">Нужен карась живец?</a></li>
+                        <li><a href="#" target="_blank">Нужен карась живец?</a></li>
+                    </ul>
+                    <a href="#" class="albumLink">
+                        Наш фотоальбом
+                    </a>
+                    <div class="bigPhotoWrapper">
+                        <a href="images/album/5.JPG" class="fancybox" rel="group">
+                            <img src="images/album/5.JPG">
+                        </a>
+                    </div>
+                    <div class="smallPhotoWrapper">
+                        <a href="images/album/5.JPG" class="fancybox smallPhotoPreview" rel="group">
+                            <img src="images/album/5.JPG">
+                        </a>
+                        <a href="images/album/5.JPG" class="fancybox smallPhotoPreview" rel="group">
+                            <img src="images/album/5.JPG">
+                        </a>
+                        <a href="images/album/5.JPG" class="fancybox smallPhotoPreview" rel="group">
+                            <img src="images/album/5.JPG">
+                        </a>
+
+                    </div>
+                </aside><!-- #sideLeft -->
+
+
+            </section><!-- #middle-->
+            <div class="orangeBlock">
+                <div class="orangeTopBlock">
+                    <div class="col-xl">
+                        <a href="index.html" class="logo">судачок</a>
+                    </div>
+                    <div class="col"><div class="iconBlock tapki"></div></div>
+                    <div class="col"><div class="iconBlock molnia"></div></div>
+                    <div class="col"><div class="iconBlock smile"></div></div>
+                    <div class="col"><div class="iconBlock pluha"></div></div>
+                </div>
+                <div class="orangeHeaders">
+                    <div class="col-xl"><h3>Рыболовный магазин «Судачок»</h3></div>
+                    <div class="col"><h3>Удобно</h3></div>
+                    <div class="col"><h3>Удобно</h3></div>
+                    <div class="col"><h3>Удобно</h3></div>
+                    <div class="col"> <h3>Удобно</h3>   
+                    </div>
+                </div>
+                <div class="orangeText">
+                    <div class="col-xl"> <div class="textColumn">Приветствуем Вас в крупнейшем интернет-магазине
+                            Ростова-на-Дону 
+                            и ЮФО. Наша команда работает над тем, чтобы сделать покупки выгодными,
+                            удобными и приносящими удовольствие. Мы счастливы от того, 
+                            что помогаем людям экономить время и деньги, потому что 
+                            это улучшает качество жизни каждого нашего клиента. 
+                        </div></div>
+                    <div class="col"><div class="textColumn">При формировании ассортимента мы стремимся
+                            максимально приблизиться 
+                            к концепции гипермаркета, что бы наши клиенты могли свести 
+                            время поездок 
+                            по розничным магазинам к минимуму.
+                        </div></div>
+                    <div class="col">
+                        <div class="textColumn">При формировании ассортимента мы стремимся
+                            максимально приблизиться 
+                            к концепции гипермаркета, что бы наши клиенты могли свести 
+                            время поездок 
+                            по розничным магазинам к минимуму.
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="textColumn">При формировании ассортимента мы стремимся
+                            максимально приблизиться 
+                            к концепции гипермаркета, что бы наши клиенты могли свести 
+                            время поездок 
+                            по розничным магазинам к минимуму.
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="textColumn">При формировании ассортимента мы стремимся
+                            максимально приблизиться 
+                            к концепции гипермаркета, что бы наши клиенты могли свести 
+                            время поездок 
+                            по розничным магазинам к минимуму.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog_container">
+                <div class="blog_container_header_container">
+                    <div class="blog_container_header">
+                        <a href="#">Блог</a>
+                    </div>
+                    <div class="blog_container_header_border"></div>
+                </div>
+                <ul class="blog_container_posts ">
+                    <li class="blog_container_posts_margin">
+                        <div class="blog_container_posts_link">
+                            <a href="#">
+                                Подтекст неравномерен
+                            </a>
+                        </div>
+                        <div class="blog_container_posts_date">
+                            2012.08.06
+                        </div>
+                        <div class="blog_container_posts_text">
+                            <img src="images/blog_example.jpg" class="blog_container_posts_text_img"/>
+                            В отличие от давно известных астрономам планет земной группы, сарос неустойчив. 
+                            Угловое расстояние представляет собой экваториальный радиант,
+                            в таком случае эксцентриситеты и наклоны орбит возрастают. Межзвездная матеpия вероятна                  
+                        </div>
+                    </li>
+                    <li class="blog_container_posts_margin">
+                        <div class="blog_container_posts_link">
+                            <a href="#">
+                                Подтекст неравномерен
+                            </a>
+                        </div>
+                        <div class="blog_container_posts_date">
+                            2012.08.06
+                        </div>
+                        <div class="blog_container_posts_text">
+                            <img src="images/blog_example.jpg" class="blog_container_posts_text_img"/>
+                            В отличие от давно известных астрономам планет земной группы, сарос неустойчив. 
+                            Угловое расстояние представляет собой экваториальный радиант,
+                            в таком случае эксцентриситеты и наклоны орбит возрастают. Межзвездная матеpия вероятна                  
+                        </div>
+                    </li>
+                    <li class="blog_container_posts_margin">
+                        <div class="blog_container_posts_link">
+                            <a href="#">
+                                Подтекст неравномерен
+                            </a>
+                        </div>
+                        <div class="blog_container_posts_date">
+                            2012.08.06
+                        </div>
+                        <div class="blog_container_posts_text">
+                            <img src="images/blog_example.jpg" class="blog_container_posts_text_img"/>
+                            В отличие от давно известных астрономам планет земной группы, сарос неустойчив. 
+                            Угловое расстояние представляет собой экваториальный радиант,
+                            в таком случае эксцентриситеты и наклоны орбит возрастают. Межзвездная матеpия вероятна                  
+                        </div>
+                    </li>
+                    <li>
+                        <div class="blog_container_posts_link">
+                            <a href="#">
+                                Подтекст неравномерен
+                            </a>
+                        </div>
+                        <div class="blog_container_posts_date">
+                            2012.08.06
+                        </div>
+                        <div class="blog_container_posts_text">
+                            <img src="images/blog_example.jpg" class="blog_container_posts_text_img"/>
+                            Параметр последовательно притягивает эллиптический поперечник, таким образом, часовой пробег 
+                            каждой точки поверхности на экваторе равен 1666км. 
+                            Юпитер на следующий год, когда было лунное затмение и сгорел древний храм Афины в Афинах 
+                            (при эфоре Питии и афинском архонте Каллии. 
+                            Космический мусор, в первом приближении, отражает болид , выслеживая яркие, броские образования
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="social">
+               <a class="twitter-timeline" href="https://twitter.com/sudachokdon" data-widget-id="311203269760401408">Твиты пользователя @sudachokdon</a>
+            </div>
+
+        </div><!-- #wrapper -->
+
+        <footer id="footer">
+            <div class="greyFooter">
+                <div class="paymentIcons leftFloat">
+                    <ul>
+                        <li>
+                            <a href="#" class="paymentIconHref paymentIcon-1"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-2"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-3"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-4"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="paymentIconHref paymentIcon-5"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-6"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-7"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-8"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="paymentIconHref paymentIcon-9"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-10"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-11"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-12"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottomLinks leftFloat">
+                    <div class="leftFloat">
+                        <ul>
+                            <li><a href="#">Полезная инфа</a></li>
+                            <li><a href="#">Штучка</a></li>
+                            <li><a href="#">Как разбогатеть</a></li>
+                            <li><a href="#">Оплата в рассрочку</a></li>
+                            <li><a href="#">Доставка по городу</a></li>
+                        </ul>
+                    </div>
+                    <div class="leftFloat">
+                        <ul>
+                            <li><a href="#">Полезная инфа</a></li>
+                            <li><a href="#">Штучка</a></li>
+                            <li><a href="#">Как разбогатеть</a></li>
+                            <li><a href="#">Оплата в рассрочку</a></li>
+                            <li><a href="#">Доставка по городу</a></li>
+                        </ul>
+                    </div>
+                    <div class="leftFloat">
+                        <ul>
+                            <li><a href="#">О магазине</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Купить</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Доставка</a></li>
+                        </ul>
+                    </div>
+                    <div class="leftFloat">
+                        <ul>
+                            <li><a href="#" class="sign signIn">Вход</a></li>
+                            <li><a href="#" class="sign signUp">Регистрация</a></li>
+                            <li><a href="#">Гарантии</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Помощь</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomFooter">
+                <div class="leftFloat">© OOO «Рыболовный магазин»
+                    <br/>
+                    Ростов-на-Дону, 2012
+                </div>
+                <div class="leftFloat">Вся информация на сайте носит справочный характер<br />
+                    и не является публичной офертой, определяемой статьей 437 ГК РФ.</div>
+                <div class="leftFloat">
+                    Пример продающего магазина<br/> от
+                    <a href="#">Владимира Бодрого</a>
+                </div>
+            </div>
+        </footer><!-- #footer -->
+
+
+        <script>
+            jQuery(document).ready(function($) {
+                jQuery('#banner-fade').bjqs({
+                    height      : 290,
+                    width       : 716,
+                    responsive  : true,
+                    automatic : true,
+                    animtype : 'fade', // accepts 'fade' or 'slide'
+                    animduration : 450, // how fast the animation are
+                    animspeed : 2500, // the delay between each slide
+                    automatic : true, // automatic
+                    showcontrols : false,
+                    usecaptions : false,
+                    menuItems: ['Скидка 500 рублей', 'Бесплатная доставка', 'Подарочные наборы', 'Новый год' ]
+                });
+            });
+            
+            
+        </script>
+        
+        
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </body>
+</html>

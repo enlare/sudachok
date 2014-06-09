@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width"/>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>Судачок</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/jquery-1.9.js"></script>
+        <script  type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+        <script type="text/javascript" src="js/jquery.carouFredSel-6.2.0-packed.js"></script>
+
+        <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js"></script>
+        <link rel="stylesheet" type="text/css" href="js/fancybox/source/jquery.fancybox.css" media="screen" />
+        <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+        <script defer src="js/jquery.flexslider.js"></script>
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+        <script src="js/slider/js/bjqs-1.3.js"></script>
+        <link rel="stylesheet" href="js/slider/bjqs.css">
+         <script src="js/jquery-placeholder.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!--[if IE 9]>
+        <link rel="stylesheet" href="css/style_ie9.css">
+      <![endif]-->
+    </head>
+    <body>
+
+        <div id="wrapper">
+            <header id="header" >
+                <div class="topHeader-wrapper stepsHeader">
+                    <div class="top">
+                        <div class="logoBlock leftFloat">
+                            <div class="greyText underLogo">
+                                Интернет-магазин
+                                рыболовного снаряжения
+                            </div>
+                            <div>
+                                <a href="index.html" class="logo">судачок</a>
+                            </div>
+                            <div>
+                                <div class="icons locationIcon"></div>
+                                <div class="town_container">
+                                    <div class="current_town boldItalic">Ростов-на-Дону</div>
+                                    <div class="town_triangle"></div>
+                                    <ul class="choice_town hidden">
+                                        <li>Ростов-На-Дону</li>
+                                        <li>Новочеркасск</li>
+                                        <li>Таганрог</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div>
+                                <div class="icons phone">
+                                    +7 (863) 282-22-01
+                                </div>
+                                <a href="javascript:void(0)" class="onlineCall">
+                                    позвонить онлайн
+                                </a>
+                            </div>
+                        </div>
+                        <!--для пустой корзины--> 
+                        <!--                        <div class="basket leftFloat emptyBasket">
+                                                    <ul class="basketSteps">
+                                                        <li>
+                                                            Сделайте покупку:
+                                                        </li>
+                                                        <li>Выберите товар</li>
+                                                        <li>Положите в корзину</li>
+                                                        <li>Оформите заказ</li>
+                                                    </ul>
+                                                    <div class="inBasket">
+                                                        <span>В корзине:</span>
+                                                        <br/>
+                                                        <a href="basket.html" class="basketBtn intheBasket"></a>
+                                                    </div>
+                                                </div>-->
+                        <!--для полной корзины-->
+                        <div class="basket leftFloat fullBasket">
+                            <div class="basketBtn leftBasketBlock"></div>
+                            <ul class="inBasketList">
+                                <li>
+                                    В корзине
+                                    <a href="javascript:void(0)" id="openBasketPopup">
+                                        3 товара
+                                    </a>
+                                </li>
+                                <li>
+                                    На суммму: 345435
+                                </li>
+                                <li>Ваша скидка <span class="skidka">20%</span></li>
+                                <li>Вы экономите 56675 руб</li>
+                            </ul>
+
+                        </div>
+                        <div class="topLinks leftFloat">
+                            <div class="leftFloat">
+                                <ul>
+                                    <li><a href="#">Полезная инфа</a></li>
+                                    <li><a href="#">Штучка</a></li>
+                                    <li><a href="#">Как разбогатеть</a></li>
+                                    <li><a href="#">Оплата в рассрочку</a></li>
+                                    <li><a href="#">Доставка по городу</a></li>
+                                </ul>
+                            </div>
+                            <div class="leftFloat">
+                                <ul>
+                                    <li><a href="#">О магазине</a></li>
+                                    <li><a href="#">Блог</a></li>
+                                    <li><a href="#">Купить</a></li>
+                                    <li><a href="#">Оплата</a></li>
+                                    <li><a href="#">Доставка</a></li>
+                                </ul>
+                            </div>
+                            <div class="leftFloat">
+                                <ul>
+                                    <li><a href="#" class="sign signIn">Вход</a></li>
+                                    <li><a href="#" class="sign signUp">Регистрация</a></li>
+                                    <li><a href="#">Гарантии</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                    <li><a href="#">Помощь</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <ul class="basketPopup hidden">
+                    <li class="borderLi">
+                        <div class="basketPreview leftFloat">
+                            <img src="images/blesna.png">
+                        </div>
+                        <ul class="tovarDescription"  itemscope itemtype="http://schema.org/Product">
+                            <li class="name"  itemprop="name">sdfsdf sdf sdfsdf</li>
+                            <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span itemprop="price">34546 руб</span></li>
+                            <li>
+                                <input class="basketInputCount marginTop0" readonly="" type="text" value="1"/>
+                                <div class="trianglesContainer marginTop0">
+                                    <div class="triangleUp5px"></div>
+                                    <div class="empty5px"></div>
+                                    <div class="triangleDown5px"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="borderLi">
+                        <div class="basketPreview leftFloat">
+                            <img src="images/blesna.png">
+                        </div>
+                        <ul class="tovarDescription"  itemscope itemtype="http://schema.org/Product">
+                            <li class="name"  itemprop="name">sdfsdf sdf sdfsdf</li>
+                            <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span itemprop="price">34546 руб</span></li>
+                            <li>
+                                <input class="basketInputCount marginTop0" readonly="" type="text" value="1"/>
+                                <div class="trianglesContainer marginTop0">
+                                    <div class="triangleUp5px"></div>
+                                    <div class="empty5px"></div>
+                                    <div class="triangleDown5px"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" class="greenBtn btn-normal" id="goToOrder">Перейти к оформлению заказа</button>
+                    </li>
+                </ul>
+
+                <ul class="stepsList">
+                    <li class="stepMenu current">
+                        <a href="step1.html" id="step1"> 
+                            <span class="bigSpan">Шаг 1</span><br />
+                            <span>Выбор способа доставки</span>
+                        </a>
+                    </li>
+                    <li class="stepMenu current">
+                        <a href="step2.html" id="step2"> 
+                            <span class="bigSpan">Шаг 2</span>
+                            <span>Выбор способа доставки</span>
+                        </a>
+                    </li>
+                    <li class="stepMenu current">
+                        <a href="step3.html" id="step3"> 
+                            <span class="bigSpan">Шаг 3</span>
+                            <span>Выбор способа доставки</span>
+                        </a>
+                    </li>
+                    <li class="stepMenu current">
+                        <a href="step4.html" id="step4"> 
+                            <span class="bigSpan">Шаг 4</span>
+                            <span>Выбор способа доставки</span>
+                        </a>
+                    </li>
+                </ul>
+            </header><!-- #header-->
+            <div class="stepWrapper">
+
+                <ul class="step4list">
+                    <li>
+                        <div class="leftFloat col-300">
+                            <ul class="ul2line"> 
+                                <li><div class="bigStepText">ШАГ 1</div></li>
+                                <li><div class="smallStepText">Выбор способа доставки</div></li>
+                            </ul>
+                        </div>
+                        <div class="leftFloat col-500">
+                            <div class="leftFloat col-400">По Москве и другим городам - постоматы PickPoint	</div>
+                            <div class="leftFloat col-100">
+                                <a href="javascript:void(0)" class="changeStep4">Изменить</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leftFloat col-300">
+                            <ul class="ul2line"> 
+                                <li><div class="bigStepText">ШАГ 2</div></li>
+                                <li> <div class="smallStepText">Информация о получателе
+                                        и адрес доставки</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="leftFloat col-500">
+                            <div class="leftFloat col-400">
+                                Иванов Иван Иванович, Телефон: 324 000, PickPoint
+                                ПВЗ: BoxBerry: Воронеж 394068, Российская 
+                                Федерация, Воронеж, Шишкова, 65-23
+                            </div>
+                            <div class="leftFloat col-100">
+                                <a href="javascript:void(0)" class="changeStep4">Изменить</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leftFloat col-300">
+                            <ul class="ul2line"> 
+                                <li>
+                                    <div class="bigStepText">ШАГ 3</div>
+                                </li>
+                                <li>
+                                    <div class="smallStepText">Выбор способа оплаты заказа</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="leftFloat col-500">
+                            <div class="leftFloat col-400">Яндекс.Деньги</div>
+                            <div class="leftFloat col-100">
+                                <a href="javascript:void(0)" class="changeStep4">Изменить</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div><!-- #wrapper -->
+
+        <footer id="footer">
+            <div class="greyFooter">
+                <div class="paymentIcons leftFloat">
+                    <ul>
+                        <li>
+                            <a href="#" class="paymentIconHref paymentIcon-1"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-2"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-3"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-4"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="paymentIconHref paymentIcon-5"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-6"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-7"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-8"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="paymentIconHref paymentIcon-9"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-10"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-11"></a>
+                            <a href="#" class="paymentIconHref paymentIcon-12"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottomLinks leftFloat">
+                    <div class="leftFloat">
+                        <ul>
+                            <li><a href="#">Полезная инфа</a></li>
+                            <li><a href="#">Штучка</a></li>
+                            <li><a href="#">Как разбогатеть</a></li>
+                            <li><a href="#">Оплата в рассрочку</a></li>
+                            <li><a href="#">Доставка по городу</a></li>
+                        </ul>
+                    </div>
+                    <div class="leftFloat">
+                        <ul>
+                            <li><a href="#">Полезная инфа</a></li>
+                            <li><a href="#">Штучка</a></li>
+                            <li><a href="#">Как разбогатеть</a></li>
+                            <li><a href="#">Оплата в рассрочку</a></li>
+                            <li><a href="#">Доставка по городу</a></li>
+                        </ul>
+                    </div>
+                    <div class="leftFloat">
+                        <ul>
+                            <li><a href="#">О магазине</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Купить</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Доставка</a></li>
+                        </ul>
+                    </div>
+                    <div class="leftFloat">
+                        <ul>
+                            <li><a href="#" class="sign signIn">Вход</a></li>
+                            <li><a href="#" class="sign signUp">Регистрация</a></li>
+                            <li><a href="#">Гарантии</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Помощь</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomFooter">
+                <div class="leftFloat">© OOO «Рыболовный магазин»
+                    <br/>
+                    Ростов-на-Дону, 2012
+                </div>
+                <div class="leftFloat">Вся информация на сайте носит справочный характер<br />
+                    и не является публичной офертой, определяемой статьей 437 ГК РФ.</div>
+                <div class="leftFloat">
+                    Пример продающего магазина<br/> от
+                    <a href="#">Владимира Бодрого</a>
+                </div>
+            </div>
+        </footer><!-- #footer -->
+    </body>
+</html>
